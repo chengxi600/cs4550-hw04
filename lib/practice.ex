@@ -17,9 +17,17 @@ defmodule Practice do
   end
 
   def factor(x) do
-    # Maybe delegate this too.
-    [1,2,x]
+    Practice.Factor.factor(x)
   end
 
-  # TODO: Add a palindrome? function.
+  def palindrome(str) do
+    str == reverse_chars(str)
+  end
+
+  def reverse_chars(word) do
+    word
+    |> String.to_charlist
+    |> Enum.reverse
+    |> to_string
+  end
 end

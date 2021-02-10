@@ -12,7 +12,7 @@ use Mix.Config
 
 # TODO: Fix your hostname in the URL below
 config :practice, PracticeWeb.Endpoint,
-  url: [host: "practice.ironbeard.com", port: 80],
+  url: [host: "hw04.chengxi600.com", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
